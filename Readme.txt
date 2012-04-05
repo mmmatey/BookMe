@@ -1,1 +1,0 @@
-Klemen Krajnc, Matej Štern
