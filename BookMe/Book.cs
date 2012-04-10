@@ -19,14 +19,14 @@ namespace BookMe
 
         SqlConnection con =
                new SqlConnection(
-                   @"Data Source=MMMATEY-PC\SqlExpress;Initial Catalog=BookMe;Integrated Security=True");
+                   @"Data Source=208.91.198.196;Initial Catalog=BookMe;User Id=upo133;Password=test1234");
         SqlCommand command = new SqlCommand();
 
         public Book()
         {
             SqlConnection con =
                new SqlConnection(
-                   "Data Source=mmmatey-pc/sqlexpress;Initial Catalog=BookMe;Persist Security Info=True;");
+                   @"Data Source=208.91.198.196;Initial Catalog=BookMe;User Id=upo133;Password=test1234");
             SqlCommand command = new SqlCommand();
 
             
