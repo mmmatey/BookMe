@@ -15,7 +15,7 @@ namespace BookMe
         public int leto { get; set; }
         public string vrstaGradiva { get; set; }
         public string lang { get; set; }
-        public string access { get; set; }
+        public string zalozba { get; set; }
 
         SqlConnection con =
                new SqlConnection(
@@ -32,13 +32,13 @@ namespace BookMe
             
         }
 
-        public Book(string name, string author, int year, string jezik, string gradivo, string dostop)
+        public Book(string name, string author, string year, string jezik, string gradivo, string zal)
         {
             
             this.ime = name;
-            this.access = dostop;
+            this.zalozba = zal;
             this.lang = jezik;
-            this.leto = year;
+            this.leto = Int32.Parse(year);
             this.vrstaGradiva = gradivo;
             this.avtor = author;
             
@@ -53,7 +53,7 @@ namespace BookMe
             command.Parameters.AddWithValue("@jezik", lang);
             command.Parameters.AddWithValue("@leto", leto);
             command.Parameters.AddWithValue("@gradivo", vrstaGradiva);
-            command.Parameters.AddWithValue("@dostopno", access);
+            command.Parameters.AddWithValue("@zalozba", zalozba);
             con.Open();
             command.ExecuteNonQuery();
             con.Close();
@@ -76,12 +76,12 @@ namespace BookMe
             return "Knjiga izbrisana";
         }
 
-        public string Update(string name, string author, int year, string jezik, string gradivo, string dostop)
+        public string Update(string name, string author, string year, string jezik, string gradivo, string zal)
         {
             this.ime = name;
-            this.access = dostop;
+            this.zalozba = zal;
             this.lang = jezik;
-            this.leto = year;
+            this.leto = Int32.Parse(year);
             this.vrstaGradiva = gradivo;
             this.avtor = author;
 
@@ -92,7 +92,7 @@ namespace BookMe
             command.Parameters.AddWithValue("@jezik", lang);
             command.Parameters.AddWithValue("@leto", leto);
             command.Parameters.AddWithValue("@gradivo", vrstaGradiva);
-            command.Parameters.AddWithValue("@dostopno", access);
+            command.Parameters.AddWithValue("@zalozba", zalozba);
             con.Open();
             command.ExecuteNonQuery();
             con.Close();

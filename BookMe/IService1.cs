@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -16,8 +17,15 @@ namespace BookMe
         [WebInvoke(Method = "GET",
            ResponseFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Wrapped,
-            UriTemplate = "json/{id}")]
-        string JSONData(string id);
+            UriTemplate = "json/{id}/{naslov}/{avtor}/{gradivo}/{leto}/{jezik}/{zalozba}")]
+        Book JSONData(string id, string naslov, string avtor, string gradivo, string leto, string jezik, string zalozba);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+           ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "json/iskanje/{gradivo}/{jezik}/{niz}")]
+        Search IskanjeOsnovno(string gradivo, string jezik, string niz);
     }
    
 }

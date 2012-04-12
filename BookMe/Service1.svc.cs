@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
@@ -12,9 +14,9 @@ namespace BookMe
     public class Service1 : IService1
     {
 
-        public string JSONData(string id)
+        public Book JSONData(string id,string naslov, string avtor, string gradivo, string leto, string jezik, string zalozba)
         {
-            Book knjiga = new Book("Knjiga test", "Desa", 1990, "sloven", "poezi", "dostopno na spletu");
+            Book knjiga = new Book(naslov, avtor, leto, jezik, gradivo, zalozba);
             string ret = "";
             if (id == "DODAJ")
             {
@@ -22,17 +24,29 @@ namespace BookMe
             }
             else if (id == "UREDI")
             {
-                ret = knjiga.Update("Knjiga test", "Desa", 2000, "sloven", "poezi", "dostopno na spletu");
+                ret = knjiga.Update(naslov, avtor, leto, jezik, gradivo, zalozba);
             }
-            else if(id=="IZPIS")
+            else if (id == "IZPIS")
             {
                 ret = knjiga.ToString();
             }
-            else if(id=="DELETE")
+            else if (id == "DELETE")
             {
                 ret = knjiga.Delete(5);
             }
-            return ret;
+
+            return knjiga;
+        }
+
+        public Search IskanjeOsnovno(string gradivo, string jezik, string niz)
+        {
+
+            DataSet ss = new DataSet("Iskanje");
+
+            Search search = new Search();
+            search.IskanjeOsnovno(jezik, gradivo, niz);
+
+            return search;
         }
     }
 }
