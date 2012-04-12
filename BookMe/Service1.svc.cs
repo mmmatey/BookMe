@@ -13,6 +13,24 @@ namespace BookMe
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     public class Service1 : IService1
     {
+        [DataContract]
+        public struct IskalniRezultat
+        {
+            [DataMember]
+            public int ID { get; set; }
+            [DataMember]
+            public string avtor { get; set; }
+            [DataMember]
+            public string naslov { get; set; }
+            [DataMember]
+            public string vrsta { get; set; }
+            [DataMember]
+            public string jezik { get; set; }
+            [DataMember]
+            public int leto { get; set; }
+            [DataMember]
+            public string dostop { get; set; }
+        }
 
         public Book JSONData(string id,string naslov, string avtor, string gradivo, string leto, string jezik, string zalozba)
         {
@@ -38,15 +56,12 @@ namespace BookMe
             return knjiga;
         }
 
-        public Search IskanjeOsnovno(string gradivo, string jezik, string niz)
+        public List<IskalniRezultat> IskanjeOsnovno(string gradivo, string jezik, string niz)
         {
-
-            DataSet ss = new DataSet("Iskanje");
-
             Search search = new Search();
-            search.IskanjeOsnovno(jezik, gradivo, niz);
+            List<IskalniRezultat> src = search.IskanjeOsnovno(jezik, gradivo, niz);
 
-            return search;
+            return src;
         }
     }
 }
