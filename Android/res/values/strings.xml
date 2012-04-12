@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, BookMeActivity!</string>
+    <string name="app_name">BookMe</string>
+    <string name="jezik">Jezik</string>
+    <string name="gradivo">Vrsta gradiva:</string>
+    <string name="naslov">Naslov:</string>
+    <string name="avtor">Avtor:</string>
+    <string name="leto">Leto izdaje:</string>
+    <string name="dodaj">Dodaj knjigo</string>
+    <string name="niz">Iskalni niz:</string>
+    <string name="isci">Isci knjige</string>
+
+</resources>
