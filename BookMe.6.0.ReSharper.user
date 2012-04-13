@@ -1,9 +1,40 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Web.config" caret="823" fromTop="15" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Web.config" caret="1547" fromTop="24" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1249" fromTop="0" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:IService1.cs" caret="1085" fromTop="13" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1715" fromTop="14" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="1372" fromTop="24" />
     </RecentFiles>
-    <RecentEdits />
+    <RecentEdits>
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1941" fromTop="16" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="3464" fromTop="16" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="860" fromTop="17" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1478" fromTop="20" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1291" fromTop="10" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1291" fromTop="14" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1380" fromTop="14" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="955" fromTop="14" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="474" fromTop="11" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="555" fromTop="10" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:IService1.cs" caret="790" fromTop="9" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1067" fromTop="10" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1273" fromTop="16" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="2686" fromTop="3" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="2878" fromTop="8" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="745" fromTop="8" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="543" fromTop="10" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="544" fromTop="16" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1331" fromTop="14" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="1436" fromTop="15" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="669" fromTop="13" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="555" fromTop="14" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1704" fromTop="13" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:IService1.cs" caret="1085" fromTop="13" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1018" fromTop="7" />
+      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="1372" fromTop="9" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -20,7 +51,83 @@
     <string />
     <integer />
     <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="string" priority="606" />
+      <Item value="public" priority="223" />
+      <Item value="static" priority="31" />
+      <Item value="MessagePropertyAttribute`0" priority="31" />
+      <Item value="zalozba" priority="95" />
+      <Item value="DataContractSerializer" priority="26" />
+      <Item value="typeof" priority="31" />
+      <Item value="Book`0" priority="63" />
+      <Item value="JsonReaderWriterFactory`0" priority="31" />
+      <Item value="return" priority="127" />
+      <Item value="DataSet`0" priority="159" />
+      <Item value="DataSet" priority="57" />
+      <Item value="Search`0" priority="159" />
+      <Item value="void" priority="31" />
+      <Item value="gradivo" priority="95" />
+      <Item value="beseda" priority="31" />
+      <Item value="search" priority="96" />
+      <Item value="new" priority="127" />
+      <Item value="Search" priority="57" />
+      <Item value="jezik" priority="63" />
+      <Item value="niz" priority="31" />
+      <Item value="ss" priority="63" />
+      <Item value="knjiga" priority="31" />
+      <Item value="SqlDataAdapter`0" priority="31" />
+      <Item value="SqlDataAdapter" priority="28" />
+      <Item value="command" priority="63" />
+      <Item value="sql" priority="31" />
+      <Item value="ds" priority="63" />
+      <Item value="foreach" priority="63" />
+      <Item value="DataRow`0" priority="62" />
+      <Item value="DataTable`0" priority="31" />
+      <Item value="DataTable" priority="28" />
+      <Item value="dt" priority="31" />
+      <Item value="dataRow" priority="63" />
+      <Item value="int" priority="31" />
+      <Item value="naslov" priority="31" />
+      <Item value="avtor" priority="31" />
+      <Item value="leto" priority="31" />
+      <Item value="Leto" priority="31" />
+      <Item value="bool" priority="31" />
+      <Item value="if" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BookMe.Book">
+      <Item value="zalozba" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Serialization.Json.DataContractJsonSerializer">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Runtime.Serialization.Json.JsonReaderWriterFactory">
+      <Item value="CreateJsonWriter`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BookMe.Search">
+      <Item value="IskanjeOsnovno`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlDataAdapter">
+      <Item value="Fill`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataSet">
+      <Item value="Tables" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTable">
+      <Item value="Rows" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlCommand">
+      <Item value="Parameters" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlParameterCollection">
+      <Item value="AddWithValue`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="53" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

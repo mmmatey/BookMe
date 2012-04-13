@@ -38,15 +38,10 @@ namespace BookMe
             return knjiga;
         }
 
-        public Search IskanjeOsnovno(string gradivo, string jezik, string niz)
+        public DataSet IskanjeOsnovno(string gradivo, string jezik, string niz)
         {
-
-            DataSet ss = new DataSet("Iskanje");
-
-            Search search = new Search();
-            search.IskanjeOsnovno(jezik, gradivo, niz);
-
-            return search;
+            Search search = new Search(true);
+            return search.IskanjeOsnovno(jezik, gradivo, niz);
         }
     }
 }

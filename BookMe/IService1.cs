@@ -25,7 +25,7 @@ namespace BookMe
            ResponseFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Wrapped,
             UriTemplate = "json/iskanje/{gradivo}/{jezik}/{niz}")]
-        Search IskanjeOsnovno(string gradivo, string jezik, string niz);
+        DataSet IskanjeOsnovno(string gradivo, string jezik, string niz);
     }
    
 }
