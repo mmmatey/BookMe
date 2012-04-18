@@ -38,8 +38,40 @@ namespace BookMe
             foreach (DataRow dataRow in ds.Tables[0].Rows)
             {
                 Service1.IskalniRezultat ir = new Service1.IskalniRezultat();
-                ir.ID = (int) dataRow["ID"];
-                ir.avtor = (string) dataRow["Avtor"];
+                ir.ID = (int)dataRow["ID"];
+                ir.avtor = (string)dataRow["Avtor"];
+                ir.naslov = (string)dataRow["Naslov"];
+                ir.vrsta = (string)dataRow["Vrsta"];
+                ir.jezik = (string)dataRow["Jezik"];
+                ir.leto = (int)dataRow["LetoIzdaje"];
+                ir.dostop = (string)dataRow["Dostopnost"];
+                rezultati.Add(ir);
+            }
+
+            return rezultati;
+        }
+
+        public List<Service1.IskalniRezultat> IskanjeIzbirno(string avtor, string leto,
+            string naslov, string jezik, string gradivo)
+        {
+            command = new SqlCommand("upo133.IzbirnoIskanje", con);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@avtor", avtor);
+            command.Parameters.AddWithValue("@leto", leto);
+            command.Parameters.AddWithValue("@naslov", naslov);
+            command.Parameters.AddWithValue("@jezik", jezik);
+            command.Parameters.AddWithValue("@vrsta", gradivo);
+
+            DataSet ds = new DataSet("Rezultat");
+            SqlDataAdapter sql = new SqlDataAdapter(command);
+            sql.Fill(ds);
+
+            List<Service1.IskalniRezultat> rezultati = new List<Service1.IskalniRezultat>();
+            foreach (DataRow dataRow in ds.Tables[0].Rows)
+            {
+                Service1.IskalniRezultat ir = new Service1.IskalniRezultat();
+                ir.ID = (int)dataRow["ID"];
+                ir.avtor = (string)dataRow["Avtor"];
                 ir.naslov = (string)dataRow["Naslov"];
                 ir.vrsta = (string)dataRow["Vrsta"];
                 ir.jezik = (string)dataRow["Jezik"];

@@ -63,5 +63,14 @@ namespace BookMe
 
             return src;
         }
+
+        public List<IskalniRezultat> IskanjeIzbirno(string avtor, string leto, 
+            string naslov, string jezik, string gradivo)
+        {
+            Search search = new Search();
+            List<IskalniRezultat> src = search.IskanjeIzbirno(avtor, leto, naslov, jezik, gradivo);
+
+            return src;
+        }
     }
 }

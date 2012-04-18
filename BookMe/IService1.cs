@@ -19,13 +19,21 @@ namespace BookMe
             BodyStyle = WebMessageBodyStyle.Wrapped,
             UriTemplate = "json/{id}/{naslov}/{avtor}/{gradivo}/{leto}/{jezik}/{zalozba}")]
         Book JSONData(string id, string naslov, string avtor, string gradivo, string leto, string jezik, string zalozba);
-        
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+           ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "json/iskanje/{avtor}/{leto}/{naslov}/{jezik}/{gradivo}")]
+        List<Service1.IskalniRezultat> IskanjeIzbirno(string avtor, string leto,
+            string naslov, string jezik, string gradivo);
+
         [OperationContract]
         [WebInvoke(Method = "GET",
            ResponseFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Wrapped,
             UriTemplate = "json/iskanje/{gradivo}/{jezik}/{niz}")]
         List<Service1.IskalniRezultat> IskanjeOsnovno(string gradivo, string jezik, string niz);
-
+        
     }
 }
