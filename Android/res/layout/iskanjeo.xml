@@ -14,7 +14,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Spinner
-        android:id="@+id/jeziki"
+        android:id="@+id/jezi"
         android:layout_width="226dp"
         android:layout_height="35dp"
         android:layout_x="85dp"
@@ -31,7 +31,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Spinner
-        android:id="@+id/gradivo"
+        android:id="@+id/grad"
         android:layout_width="188dp"
         android:layout_height="35dp"
         android:layout_x="120dp"

@@ -27,7 +27,7 @@ public class DodajanjeKnjig extends Activity {
 	Spinner _jezik;
 	Button _dodaj;
 	RestAsyncTask rat;
-	private String restURL = "http://192.168.1.2/BookMe/Service1.svc/json/";
+	private String restURL = "http://164.8.118.120/BookMe/Service1.svc/json/";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

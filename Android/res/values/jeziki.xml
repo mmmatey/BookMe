@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <string-array name="jeziki">
+        <item> </item>
         <item>slovenski</item>
         <item>angleški</item>
         <item>francoski</item>
         <item>hrvaški</item>
         <item>nemški</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
     </string-array>
 </resources>
