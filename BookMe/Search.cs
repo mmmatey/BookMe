@@ -51,16 +51,51 @@ namespace BookMe
             return rezultati;
         }
 
-        public List<Service1.IskalniRezultat> IskanjeIzbirno(string avtor, string leto,
-            string naslov, string jezik, string gradivo)
+        public List<Service1.IskalniRezultat> IskanjeIzbirno(string avtor,
+            string naslov, string leto, string jezik, string gradivo)
         {
             command = new SqlCommand("upo133.IzbirnoIskanje", con);
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@avtor", avtor);
-            command.Parameters.AddWithValue("@leto", leto);
-            command.Parameters.AddWithValue("@naslov", naslov);
-            command.Parameters.AddWithValue("@jezik", jezik);
-            command.Parameters.AddWithValue("@vrsta", gradivo);
+            if (avtor == " ")
+            {
+                command.Parameters.Add("@avtor", SqlDbType.NVarChar).Value = DBNull.Value;
+            }
+            else
+            {
+                command.Parameters.AddWithValue("@avtor", avtor);
+            }
+            if (naslov == " ")
+            {
+                command.Parameters.Add("@naslov", SqlDbType.NVarChar).Value = DBNull.Value;
+            }
+            else
+            {
+                command.Parameters.AddWithValue("@naslov", naslov);
+            }
+            if (leto == " ")
+            {
+                command.Parameters.Add("@leto", SqlDbType.NVarChar).Value = DBNull.Value;
+            }
+            else
+            {
+                command.Parameters.AddWithValue("@leto", leto);
+            }
+            if (jezik == " ")
+            {
+                command.Parameters.Add("@jezik", SqlDbType.NVarChar).Value = DBNull.Value;
+            }
+            else
+            {
+                command.Parameters.AddWithValue("@jezik", jezik);
+            }
+            if (gradivo == " ")
+            {
+                command.Parameters.Add("@vrsta", SqlDbType.NVarChar).Value = DBNull.Value;
+            }
+            else
+            {
+                command.Parameters.AddWithValue("@vrsta", gradivo);
+            }
 
             DataSet ds = new DataSet("Rezultat");
             SqlDataAdapter sql = new SqlDataAdapter(command);

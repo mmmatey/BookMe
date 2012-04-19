@@ -24,9 +24,9 @@ namespace BookMe
         [WebInvoke(Method = "GET",
            ResponseFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Wrapped,
-            UriTemplate = "json/iskanje/{avtor}/{leto}/{naslov}/{jezik}/{gradivo}")]
-        List<Service1.IskalniRezultat> IskanjeIzbirno(string avtor, string leto,
-            string naslov, string jezik, string gradivo);
+            UriTemplate = "json/iskanje/{avtor}/{naslov}/{leto}/{jezik}/{gradivo}/")]
+        List<Service1.IskalniRezultat> IskanjeIzbirno(string avtor,
+            string naslov, string leto, string jezik, string gradivo);
 
         [OperationContract]
         [WebInvoke(Method = "GET",
