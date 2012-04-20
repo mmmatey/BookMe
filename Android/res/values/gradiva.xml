@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gradivo">
+        <item> </item>
+        <item>članek</item>
+        <item>časopis</item>
+        <item>revija</item>
+        <item>priročnik</item>
+        <item>zbornik</item>
+        <item>knjiga</item>
+        <item>strokovna monog.</item>
+        <item>poezija</item>
+    </string-array>
+</resources>
