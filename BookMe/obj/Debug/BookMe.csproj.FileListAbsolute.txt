@@ -3,8 +3,8 @@ C:\Users\Mmmatey\Documents\Faks\3.Letnik\2.semester\PRAK\projekt\BookMe\BookMe\b
 C:\Users\Mmmatey\Documents\Faks\3.Letnik\2.semester\PRAK\projekt\BookMe\BookMe\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Mmmatey\Documents\Faks\3.Letnik\2.semester\PRAK\projekt\BookMe\BookMe\obj\Debug\BookMe.dll
 C:\Users\Mmmatey\Documents\Faks\3.Letnik\2.semester\PRAK\projekt\BookMe\BookMe\obj\Debug\BookMe.pdb
-C:\Users\Mmmatey\BookMe\BookMe\bin\BookMe.dll
-C:\Users\Mmmatey\BookMe\BookMe\bin\BookMe.pdb
-C:\Users\Mmmatey\BookMe\BookMe\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Mmmatey\BookMe\BookMe\obj\Debug\BookMe.dll
-C:\Users\Mmmatey\BookMe\BookMe\obj\Debug\BookMe.pdb
+C:\Users\KK\SQL-Vaje\Praktikum\BookMe\BookMe\BookMe\bin\BookMe.dll
+C:\Users\KK\SQL-Vaje\Praktikum\BookMe\BookMe\BookMe\bin\BookMe.pdb
+C:\Users\KK\SQL-Vaje\Praktikum\BookMe\BookMe\BookMe\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KK\SQL-Vaje\Praktikum\BookMe\BookMe\BookMe\obj\Debug\BookMe.dll
+C:\Users\KK\SQL-Vaje\Praktikum\BookMe\BookMe\BookMe\obj\Debug\BookMe.pdb

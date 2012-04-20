@@ -24,8 +24,16 @@ namespace BookMe
         [WebInvoke(Method = "GET",
            ResponseFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "json/iskanje/{avtor}/{naslov}/{leto}/{jezik}/{gradivo}/")]
+        List<Service1.IskalniRezultat> IskanjeIzbirno(string avtor,
+            string naslov, string leto, string jezik, string gradivo);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+           ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
             UriTemplate = "json/iskanje/{gradivo}/{jezik}/{niz}")]
-        DataSet IskanjeOsnovno(string gradivo, string jezik, string niz);
+        List<Service1.IskalniRezultat> IskanjeOsnovno(string gradivo, string jezik, string niz);
+        
     }
-   
 }
