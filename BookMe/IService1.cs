@@ -34,6 +34,13 @@ namespace BookMe
             BodyStyle = WebMessageBodyStyle.Wrapped,
             UriTemplate = "json/iskanje/{gradivo}/{jezik}/{niz}")]
         List<Service1.IskalniRezultat> IskanjeOsnovno(string gradivo, string jezik, string niz);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+           ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "json/iskanje/{ukaz}")]
+        List<Service1.IskalniRezultat> IskanjeUkazno(string ukaz);
         
     }
 }
