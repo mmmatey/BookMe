@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_x="22dp"
+        android:layout_y="17dp"
+        android:text="@string/jezik"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/jezi"
+        android:layout_width="226dp"
+        android:layout_height="35dp"
+        android:layout_x="85dp"
+        android:layout_y="14dp"
+        android:entries="@array/jeziki" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="64dp"
+        android:text="@string/gradivo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/grad"
+        android:layout_width="188dp"
+        android:layout_height="35dp"
+        android:layout_x="120dp"
+        android:layout_y="59dp"
+        android:entries="@array/gradivo" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="103dp"
+        android:text="@string/niz"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/beseda"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_x="23dp"
+        android:layout_y="132dp"
+        android:inputType="textMultiLine"
+        android:width="200px" />
+
+    <Button
+        android:id="@+id/gumbZaIskanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="120dp"
+        android:layout_y="196dp"
+        android:text="@string/isci" />
+
+</AbsoluteLayout>

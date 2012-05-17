@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="6dp"
+        android:layout_y="4dp"
+        android:text="@string/naslov"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="206dp"
+        android:layout_height="34dp"
+        android:layout_x="82dp"
+        android:layout_y="4dp"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="45dp"
+        android:text="@string/avtor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/MultiAutoCompleteTextView02"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_x="78dp"
+        android:layout_y="41dp"
+        android:textSize="20px"/>
+
+    <EditText
+        android:id="@+id/MultiAutoCompleteTextView01"
+        android:layout_width="168dp"
+        android:layout_height="34dp"
+        android:layout_x="114dp"
+        android:layout_y="84dp"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="86dp"
+        android:text="@string/leto"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_x="88dp"
+        android:layout_y="120dp"
+        android:entries="@array/gradivo" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_x="61dp"
+        android:layout_y="305dp"
+        android:text="@string/dodaj" />
+
+    <Spinner
+        android:id="@+id/Spinner01"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_x="86dp"
+        android:layout_y="176dp"
+        android:entries="@array/jeziki" />
+
+    <Spinner
+        android:id="@+id/Spinner02"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_x="81dp"
+        android:layout_y="232dp"
+        android:entries="@array/zalozbe" />
+
+</AbsoluteLayout>

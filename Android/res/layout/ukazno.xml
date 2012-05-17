@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="223dp"
+        android:layout_height="103dp"
+        android:layout_x="68dp"
+        android:layout_y="27dp">
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="35dp"
+        android:text="@string/ukaz"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_x="194dp"
+        android:layout_y="190dp"
+        android:text="@string/isci" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_x="70dp"
+        android:layout_y="134dp"
+        android:text="@string/and" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_x="128dp"
+        android:layout_y="134dp"
+        android:text="@string/or" />
+
+</AbsoluteLayout>
