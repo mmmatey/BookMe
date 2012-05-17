@@ -11,7 +11,7 @@ public class RestAsyncTask extends AsyncTask<String, Void, String> {
 	public RestAsyncTask(String url) {
 		
 		this.url = url;
-		Log.d("REST", url);
+		//Log.d("REST", url);
 		r= new Reader();
 	}
 	
@@ -21,7 +21,7 @@ public class RestAsyncTask extends AsyncTask<String, Void, String> {
 		r.toJson(url);
 
 		String response = r.response;
-		Log.i("REST", response);
+		//Log.i("REST", response);
 		
 //        restClient = new RestClient(url);
 //        
@@ -62,7 +62,7 @@ public class RestAsyncTask extends AsyncTask<String, Void, String> {
 //		if (result.equals("ERROR"))
 //			Toast.makeText(BookMeActivity.this, "Error. Try Again.", Toast.LENGTH_SHORT).show();
 //		
-		//Toast.makeText(ProjectActivity.this, result, Toast.LENGTH_SHORT).show();
+		//Toast.makeText(BookMeActivity.this, result, Toast.LENGTH_SHORT).show();
 		
 	}
 

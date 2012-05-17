@@ -65,7 +65,7 @@ public class Reader {
 	{
 		Log.d("REST", url);
 		String read = ReadResponse(url);
-		Log.d("REST", response);
+		//Log.d("REST", read);
 		
 		try {
 			JSONObject json_data = new JSONObject(read);
@@ -76,7 +76,7 @@ public class Reader {
                 response= responses.getString(i);
             }
 		} catch (Exception e) {
-			e.printStackTrace();
+			Log.d("REST", "Napaka: "+e.toString());
 		}
 	}
 }

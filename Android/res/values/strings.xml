@@ -11,5 +11,9 @@
     <string name="dodaj">Dodaj knjigo</string>
     <string name="niz">Iskalni niz:</string>
     <string name="isci">Isci knjige</string>
+    <string name="rez">Rezultati:</string>
+    <string name="ukaz">Ukaz:</string>
+    <string name="and">AND</string>
+    <string name="or">OR</string>
 
 </resources>

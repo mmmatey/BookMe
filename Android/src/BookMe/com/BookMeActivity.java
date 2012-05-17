@@ -47,10 +47,16 @@ public class BookMeActivity extends TabActivity {
                           res.getDrawable(R.drawable.tab_iskanjei))
                       .setContent(intent);
         tabHost.addTab(spec);
-//
+
         intent = new Intent().setClass(this, DodajanjeKnjig.class);
         spec = tabHost.newTabSpec("dodaj").setIndicator("Dodajanje",
                           res.getDrawable(R.drawable.tab_book))
+                      .setContent(intent);
+        tabHost.addTab(spec);
+        
+        intent = new Intent().setClass(this, IskanjeU.class);
+        spec = tabHost.newTabSpec("isciu").setIndicator("UkaznoI",
+                          res.getDrawable(R.drawable.tab_iskanjei))
                       .setContent(intent);
         tabHost.addTab(spec);
 

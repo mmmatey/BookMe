@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="gradivo">
+        <item> </item>
         <item>članek</item>
         <item>časopis</item>
         <item>revija</item>
