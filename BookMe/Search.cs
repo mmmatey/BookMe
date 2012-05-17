@@ -122,24 +122,24 @@ namespace BookMe
         public List<Service1.IskalniRezultat> IskanjeUkazno(string ukaz)
         {
             ukaz = ukaz.Trim();
-            ukaz = Regex.Replace(ukaz, @"\s+", " ");
-            string[] columns = new[] { " upo133.Avtor.Avtor LIKE ''%", " upo133.Knjiga.Naslov LIKE ''%", 
-                " upo133.Knjiga.LetoIzdaje LIKE ''%", " upo133.Jezik.Jezik LIKE ''%", 
-                " upo133.Gradivo.Vrsta LIKE ''%" };
+            ukaz = Regex.Replace(ukaz, @"\s+", "");
+            string[] columns = new[] { " upo133.Avtor.Avtor LIKE '%", " upo133.Knjiga.Naslov LIKE '%", 
+                " upo133.Knjiga.LetoIzdaje LIKE '%", " upo133.Jezik.Jezik LIKE '%", 
+                " upo133.Gradivo.Vrsta LIKE '%" };
             string[] zacUkazi = new string[5];
             Dictionary<int, int> orAnd = new Dictionary<int, int>();
 
             int ind = ukaz.IndexOf("OR", 0, StringComparison.InvariantCulture);
             while (ind != -1)
             {
-                orAnd.Add(ind, ind + 2);
-                ind = ukaz.IndexOf("OR", ind + 5, StringComparison.InvariantCulture);
+                orAnd.Add(ind, ind + 5);
+                ind = ukaz.IndexOf("OR", ind + 3, StringComparison.InvariantCulture);
             }
             ind = ukaz.IndexOf("AND", 0, StringComparison.InvariantCulture);
             while (ind != -1)
             {
-                orAnd.Add(ind, ind + 3);
-                ind = ukaz.IndexOf("AND", ind + 6, StringComparison.InvariantCulture);
+                orAnd.Add(ind, ind + 6);
+                ind = ukaz.IndexOf("AND", ind + 3, StringComparison.InvariantCulture);
             }
 
             var keys = from k in orAnd.Keys
@@ -148,10 +148,10 @@ namespace BookMe
 
             for (int i = 0; i < columns.Length; i++ )
             {
-                string zacUkaz = ukaz + "%'') ";
+                string zacUkaz = ukaz + "%') ";
                 foreach (int key in keys)
                 {
-                    zacUkaz = zacUkaz.Insert(key, "%'' ");
+                    zacUkaz = zacUkaz.Insert(key, "%' ");
                     zacUkaz = zacUkaz.Insert(orAnd[key], columns[i]);
                 }
                 zacUkazi[i] = "(" + columns[i] + zacUkaz;
