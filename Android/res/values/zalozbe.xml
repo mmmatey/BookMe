@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="zalozbe">
-       <item>DZS</item>
-    <item>Mladinska knjiga</item>
-    <item>Rokus</item> 
-    </string-array>
-    
-</resources>
