@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace BookMe
@@ -117,5 +118,76 @@ namespace BookMe
 
             return rezultati;
         }
+
+        public List<Service1.IskalniRezultat> IskanjeUkazno(string ukaz)
+        {
+            ukaz = ukaz.Trim();
+            ukaz = Regex.Replace(ukaz, @"\s+", " ");
+            string[] columns = new[] { " upo133.Avtor.Avtor LIKE ''%", " upo133.Knjiga.Naslov LIKE ''%", 
+                " upo133.Knjiga.LetoIzdaje LIKE ''%", " upo133.Jezik.Jezik LIKE ''%", 
+                " upo133.Gradivo.Vrsta LIKE ''%" };
+            string[] zacUkazi = new string[5];
+            Dictionary<int, int> orAnd = new Dictionary<int, int>();
+
+            int ind = ukaz.IndexOf("OR", 0, StringComparison.InvariantCulture);
+            while (ind != -1)
+            {
+                orAnd.Add(ind, ind + 2);
+                ind = ukaz.IndexOf("OR", ind + 5, StringComparison.InvariantCulture);
+            }
+            ind = ukaz.IndexOf("AND", 0, StringComparison.InvariantCulture);
+            while (ind != -1)
+            {
+                orAnd.Add(ind, ind + 3);
+                ind = ukaz.IndexOf("AND", ind + 6, StringComparison.InvariantCulture);
+            }
+
+            var keys = from k in orAnd.Keys
+                        orderby k descending 
+                        select k;
+
+            for (int i = 0; i < columns.Length; i++ )
+            {
+                string zacUkaz = ukaz + "%'') ";
+                foreach (int key in keys)
+                {
+                    zacUkaz = zacUkaz.Insert(key, "%'' ");
+                    zacUkaz = zacUkaz.Insert(orAnd[key], columns[i]);
+                }
+                zacUkazi[i] = "(" + columns[i] + zacUkaz;
+            }
+
+            string celotniUkaz = zacUkazi[0];
+            for (int i = 1; i < zacUkazi.Length; i++ )
+            {
+                celotniUkaz += " OR " + zacUkazi[i];
+            }
+
+
+            command = new SqlCommand("upo133.UkaznoIskanje", con);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@celotniUkaz", celotniUkaz);
+
+            DataSet ds = new DataSet("Rezultat");
+            SqlDataAdapter sql = new SqlDataAdapter(command);
+            sql.Fill(ds);
+
+            List<Service1.IskalniRezultat> rezultati = new List<Service1.IskalniRezultat>();
+            foreach (DataRow dataRow in ds.Tables[0].Rows)
+            {
+                Service1.IskalniRezultat ir = new Service1.IskalniRezultat();
+                ir.ID = (int)dataRow["ID"];
+                ir.avtor = (string)dataRow["Avtor"];
+                ir.naslov = (string)dataRow["Naslov"];
+                ir.vrsta = (string)dataRow["Vrsta"];
+                ir.jezik = (string)dataRow["Jezik"];
+                ir.leto = (int)dataRow["LetoIzdaje"];
+                ir.dostop = (string)dataRow["Dostopnost"];
+                rezultati.Add(ir);
+            }
+
+            return rezultati;
+        }
+
     }
 }

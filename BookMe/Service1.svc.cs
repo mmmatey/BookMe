@@ -72,5 +72,13 @@ namespace BookMe
 
             return src;
         }
+
+        public List<IskalniRezultat> IskanjeUkazno(string ukaz)
+        {
+            Search search = new Search();
+            List<IskalniRezultat> src = search.IskanjeUkazno(ukaz);
+
+            return src;
+        }
     }
 }
