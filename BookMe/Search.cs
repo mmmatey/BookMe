@@ -208,6 +208,8 @@ namespace BookMe
                 knj.X = (double)dataRow["X"];
                 knj.Y = (double)dataRow["Y"];
                 knj.dostopnost = (string)dataRow["Dostopnost"];
+                knj.stevilo = (int)dataRow["Stevilo"];
+                knj.stevilo = (int)dataRow["StIzposojenih"];
                 rezultati.Add(knj);
             }
 

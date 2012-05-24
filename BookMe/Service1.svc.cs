@@ -43,6 +43,10 @@ namespace BookMe
             public double Y { get; set; }
             [DataMember]
             public string dostopnost { get; set; }
+            [DataMember]
+            public int stevilo { get; set; }
+            [DataMember]
+            public int stIzposojenih { get; set; }
         }
 
         public Book JSONData(string id,string naslov, string avtor, string gradivo, string leto, string jezik, string zalozba)
