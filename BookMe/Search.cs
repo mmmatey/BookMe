@@ -45,7 +45,7 @@ namespace BookMe
                 ir.vrsta = (string)dataRow["Vrsta"];
                 ir.jezik = (string)dataRow["Jezik"];
                 ir.leto = (int)dataRow["LetoIzdaje"];
-                ir.dostop = (string)dataRow["Dostopnost"];
+                //ir.dostop = (string)dataRow["Dostopnost"];
                 rezultati.Add(ir);
             }
 
@@ -112,7 +112,7 @@ namespace BookMe
                 ir.vrsta = (string)dataRow["Vrsta"];
                 ir.jezik = (string)dataRow["Jezik"];
                 ir.leto = (int)dataRow["LetoIzdaje"];
-                ir.dostop = (string)dataRow["Dostopnost"];
+                //ir.dostop = (string)dataRow["Dostopnost"];
                 rezultati.Add(ir);
             }
 
@@ -182,12 +182,37 @@ namespace BookMe
                 ir.vrsta = (string)dataRow["Vrsta"];
                 ir.jezik = (string)dataRow["Jezik"];
                 ir.leto = (int)dataRow["LetoIzdaje"];
-                ir.dostop = (string)dataRow["Dostopnost"];
+                //ir.dostop = (string)dataRow["Dostopnost"];
                 rezultati.Add(ir);
             }
 
             return rezultati;
         }
 
+        public List<Service1.Knjiznice> KnjizniceSKnjigo(int id)
+        {
+            command = new SqlCommand("upo133.KnjizniceSKnjigo", con);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@KnjigaId", id);
+
+            DataSet ds = new DataSet("Rezultat");
+            SqlDataAdapter sql = new SqlDataAdapter(command);
+            sql.Fill(ds);
+
+            List<Service1.Knjiznice> rezultati = new List<Service1.Knjiznice>();
+            foreach (DataRow dataRow in ds.Tables[0].Rows)
+            {
+                Service1.Knjiznice knj = new Service1.Knjiznice();
+                knj.naziv = (string)dataRow["Naziv"];
+                knj.kraj = (string)dataRow["Kraj"];
+                knj.X = (double)dataRow["X"];
+                knj.Y = (double)dataRow["Y"];
+                knj.dostopnost = (string)dataRow["Dostopnost"];
+                rezultati.Add(knj);
+            }
+
+            return rezultati;
+            //http://maps.google.com/maps?q=tehni%C5%A1ke+fakultete+maribor&hl=sl&ie=UTF8&ll=46.668287,15.380859&spn=0.942383,2.705383&sll=37.0625,-95.677068&sspn=34.808514,86.572266&t=h&hq=tehni%C5%A1ke+fakultete&hnear=Maribor,+Slovenija&z=9
+        }
     }
 }
