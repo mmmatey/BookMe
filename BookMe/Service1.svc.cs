@@ -105,5 +105,21 @@ namespace BookMe
 
             return src;
         }
+
+        public bool Prijava(string upoIme, string geslo)
+        {
+            Account acc = new Account();
+            bool pr = acc.Prijava(upoIme, geslo);
+
+            return pr;
+        }
+
+        public bool Registracija(string upoIme, string geslo)
+        {
+            Account acc = new Account();
+            bool pr = acc.Registracija(upoIme, geslo);
+
+            return pr;
+        }
     }
 }
