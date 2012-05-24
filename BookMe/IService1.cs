@@ -48,5 +48,19 @@ namespace BookMe
             BodyStyle = WebMessageBodyStyle.Wrapped,
             UriTemplate = "json/knjiznicesknjigo/{id}")]
         List<Service1.Knjiznice> KnjizniceSKnjigo(string id);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+           ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "json/prijava/{upoIme}/{geslo}")]
+        bool Prijava(string upoIme, string geslo);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+           ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "json/registracija/{upoIme}/{geslo}")]
+        bool Registracija(string upoIme, string geslo);
     }
 }
