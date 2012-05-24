@@ -2,12 +2,11 @@
   <RecentFiles>
     <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Web.config" caret="1614" fromTop="34" />
     <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="451" fromTop="13" />
-    <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="2404" fromTop="24" />
     <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:IService1.cs" caret="829" fromTop="13" />
-    <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="4168" fromTop="19" />
+    <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="6917" fromTop="60" />
+    <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="2428" fromTop="19" />
   </RecentFiles>
   <RecentEdits>
-    <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="691" fromTop="19" />
     <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="192" fromTop="14" />
     <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="192" fromTop="14" />
     <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="192" fromTop="13" />
@@ -37,5 +36,6 @@
     <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="3125" fromTop="10" />
     <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="3395" fromTop="18" />
     <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:IService1.cs" caret="1084" fromTop="18" />
+    <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="6917" fromTop="17" />
   </RecentEdits>
 </RecentFiles>

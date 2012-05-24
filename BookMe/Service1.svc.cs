@@ -28,8 +28,21 @@ namespace BookMe
             public string jezik { get; set; }
             [DataMember]
             public int leto { get; set; }
+        }
+            
+        [DataContract]
+        public struct Knjiznice
+        {
             [DataMember]
-            public string dostop { get; set; }
+            public string naziv { get; set; }
+            [DataMember]
+            public string kraj { get; set; }
+            [DataMember]
+            public double X { get; set; }
+            [DataMember]
+            public double Y { get; set; }
+            [DataMember]
+            public string dostopnost { get; set; }
         }
 
         public Book JSONData(string id,string naslov, string avtor, string gradivo, string leto, string jezik, string zalozba)
@@ -77,6 +90,14 @@ namespace BookMe
         {
             Search search = new Search();
             List<IskalniRezultat> src = search.IskanjeUkazno(ukaz);
+
+            return src;
+        }
+
+        public List<Knjiznice> KnjizniceSKnjigo(string id)
+        {
+            Search search = new Search();
+            List<Knjiznice> src = search.KnjizniceSKnjigo(int.Parse(id));
 
             return src;
         }
