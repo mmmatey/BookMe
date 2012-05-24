@@ -43,7 +43,7 @@ public class IskanjeU extends Activity {
 				// TODO Auto-generated method stub
 				ukaz= _ukaz.getText().toString();
 				
-				sendCommand(ukaz);
+				sendCommand("iskanje/"+ukaz);
 				response=rat.doInBackground(null);
 				
 				try{
@@ -61,7 +61,7 @@ public class IskanjeU extends Activity {
 		                knjiga._Avtor=mtUsers.getJSONObject(i).getString("avtor");
 		                knjiga._ID=mtUsers.getJSONObject(i).getString("ID");
 		                knjiga._Jezik=mtUsers.getJSONObject(i).getString("jezik");
-		                knjiga._Dostop=mtUsers.getJSONObject(i).getString("dostop");
+		                //knjiga._Dostop=mtUsers.getJSONObject(i).getString("dostop");
 		                knjiga._Vrsta=mtUsers.getJSONObject(i).getString("vrsta");
 		                knjiga._Naslov=mtUsers.getJSONObject(i).getString("naslov");
 		                knjiga._Leto=mtUsers.getJSONObject(i).getString("leto");

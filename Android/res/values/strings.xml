@@ -15,5 +15,14 @@
     <string name="ukaz">Ukaz:</string>
     <string name="and">AND</string>
     <string name="or">OR</string>
+    <string name="info">O knjigi:</string>
+    <string name="zalozba">Založba:</string>
+    <string name="prijava">Prijava</string>
+    <string name="username">Username:</string>
+    <string name="pass">Password:</string>
+    <string name="prija">Login</string>
+    <string name="regist">Registracija</string>
+    <string name="reg">Register</string>
+    <string name="nov">New user</string>
 
 </resources>

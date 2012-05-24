@@ -1,6 +1,5 @@
 package BookMe.com;
 
-import java.util.ArrayList;
 
 
 public class Book{
@@ -55,7 +54,7 @@ public class Book{
 	
 	public String toString()
 	{
-		return "Knjiga:"+_ID+"-->"+ _Avtor+" | "+_Naslov+" | "+_Vrsta+" | "+_Jezik+" | "+_Dostop ;
+		return _Avtor+" | "+_Naslov;
 	}
 
 }

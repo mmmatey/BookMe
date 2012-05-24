@@ -28,6 +28,7 @@ public class BookMeActivity extends TabActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        
         Resources res = getResources(); 
         TabHost tabHost = getTabHost();
         TabHost.TabSpec spec;
@@ -48,7 +49,7 @@ public class BookMeActivity extends TabActivity {
                       .setContent(intent);
         tabHost.addTab(spec);
 
-        intent = new Intent().setClass(this, DodajanjeKnjig.class);
+        intent = new Intent().setClass(this, Prijava.class);
         spec = tabHost.newTabSpec("dodaj").setIndicator("Dodajanje",
                           res.getDrawable(R.drawable.tab_book))
                       .setContent(intent);

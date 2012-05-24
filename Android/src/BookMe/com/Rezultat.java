@@ -14,6 +14,13 @@ import android.widget.ListView;
 
 public class Rezultat extends Activity {
 
+	String izbira="";
+	String avtor="";
+	String leto="";
+	String gradivo="";
+	String naslov="";
+	String jezik="";
+	String id="";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -22,7 +29,7 @@ public class Rezultat extends Activity {
 		
 		Intent i = getIntent();
 		
-		String izbira= i.getExtras().get("Objekt").toString();
+		izbira= i.getExtras().get("Objekt").toString();
 		ListView lv = (ListView) findViewById(R.id.ListView01);
 		if(izbira.equals("1"))
 		{
@@ -68,13 +75,46 @@ public class Rezultat extends Activity {
 		lv.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+			public void onItemClick(AdapterView<?> arg0, View arg1, int index,
 					long arg3) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent().setClass(getApplicationContext(),Gmaps.class);
-				startActivity(i);
+				Intent intent = new Intent().setClass(getApplicationContext(),InfoActivity.class);
+				if(izbira.equals("1"))
+				{
+					PridobiObjektKnjiga(IskanjeO.rezultat, index);
+					
+				}
+				else if(izbira.equals("2"))
+				{
+					PridobiObjektKnjiga(IskanjeI.rezultat, index);
+				}
+				
+				else
+				{
+					PridobiObjektKnjiga(IskanjeU.rezultat, index);
+
+				}
+				intent.putExtra("Avtor", avtor);
+				intent.putExtra("Naslov", naslov);
+				intent.putExtra("Leto", leto);
+				intent.putExtra("Gradivo", gradivo);
+				intent.putExtra("ID", id);
+				intent.putExtra("Jezik", jezik);
+				startActivity(intent);
 			}
 			
 		});
+	}
+	
+	public void PridobiObjektKnjiga(ArrayList<Book> knjiga, int index)
+	{
+		avtor=knjiga.get(index)._Avtor;
+		naslov=knjiga.get(index)._Naslov;
+		leto=knjiga.get(index)._Leto;
+		gradivo=knjiga.get(index)._Vrsta;
+		jezik=knjiga.get(index)._Jezik;
+		id=knjiga.get(index)._ID;
+		
+		
 	}
 }

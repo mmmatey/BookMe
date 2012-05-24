@@ -1,40 +1,7 @@
 <Configuration>
   <RecentFiles>
-    <RecentFiles>
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Web.config" caret="1547" fromTop="24" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1249" fromTop="0" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:IService1.cs" caret="1085" fromTop="13" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1715" fromTop="14" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="1372" fromTop="24" />
-    </RecentFiles>
-    <RecentEdits>
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1941" fromTop="16" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="3464" fromTop="16" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="860" fromTop="17" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1478" fromTop="20" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1291" fromTop="10" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1291" fromTop="14" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1380" fromTop="14" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="955" fromTop="14" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="474" fromTop="11" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="555" fromTop="10" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:IService1.cs" caret="790" fromTop="9" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1067" fromTop="10" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="1273" fromTop="16" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="2686" fromTop="3" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Book.cs" caret="2878" fromTop="8" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="745" fromTop="8" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="543" fromTop="10" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="544" fromTop="16" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1331" fromTop="14" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="1436" fromTop="15" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="669" fromTop="13" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="555" fromTop="14" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1704" fromTop="13" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:IService1.cs" caret="1085" fromTop="13" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Search.cs" caret="1018" fromTop="7" />
-      <File id="31AF073C-70CD-4C74-A440-636B2F7B9F74/f:Service1.svc.cs" caret="1372" fromTop="9" />
-    </RecentEdits>
+    <RecentFiles />
+    <RecentEdits />
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
