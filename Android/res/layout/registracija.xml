@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ozadje" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="112dp"
+        android:text="@string/username"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textGlavni" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="155dp"
+        android:text="@string/pass"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textGlavni" />
+
+    <AutoCompleteTextView
+        android:id="@+id/usertext"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_x="120dp"
+        android:layout_y="109dp" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:id="@+id/passtext"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_x="120dp"
+        android:layout_y="151dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="104dp"
+        android:layout_y="302dp"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_x="170dp"
+        android:layout_y="218dp"
+        android:text="@string/nov" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_x="19dp"
+        android:layout_y="27dp"
+        android:text="@string/regist"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50px" />
+
+</AbsoluteLayout>
