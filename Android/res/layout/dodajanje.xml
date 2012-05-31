@@ -4,50 +4,6 @@
     android:layout_height="match_parent"
     android:background="@color/ozadje" >
 
-    <EditText
-        android:id="@+id/multiAutoCompleteTextView1"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_x="114dp"
-        android:layout_y="4dp"
-        android:textSize="20px" />
-
-    <TextView
-        android:id="@+id/TextView02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="6dp"
-        android:layout_y="44dp"
-        android:text="@string/avtor"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/textGlavni" />
-
-    <EditText
-        android:id="@+id/MultiAutoCompleteTextView02"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_x="114dp"
-        android:layout_y="44dp"
-        android:textSize="20px" />
-
-    <EditText
-        android:id="@+id/MultiAutoCompleteTextView01"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_x="114dp"
-        android:layout_y="84dp"
-        android:textSize="20px" />
-
-    <TextView
-        android:id="@+id/TextView01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="6dp"
-        android:layout_y="84dp"
-        android:text="@string/leto"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/textGlavni" />
-
     <Button
         android:id="@+id/button1"
         android:layout_width="162dp"
@@ -56,46 +12,93 @@
         android:layout_y="305dp"
         android:text="@string/dodaj" />
 
+    <EditText
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="190dp"
+        android:layout_height="37dp"
+        android:layout_x="112dp"
+        android:layout_y="32dp"
+        android:textSize="20px" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="72dp"
+        android:text="@string/avtor"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textGlavni" />
+
+    <EditText
+        android:id="@+id/MultiAutoCompleteTextView02"
+        android:layout_width="190dp"
+        android:layout_height="37dp"
+        android:layout_x="112dp"
+        android:layout_y="72dp"
+        android:textSize="20px" />
+
+    <EditText
+        android:id="@+id/MultiAutoCompleteTextView01"
+        android:layout_width="190dp"
+        android:layout_height="37dp"
+        android:layout_x="112dp"
+        android:layout_y="112dp"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="112dp"
+        android:text="@string/leto"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textGlavni" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="6dp"
-        android:layout_y="124dp"
+        android:layout_x="4dp"
+        android:layout_y="152dp"
         android:text="@string/gradivo"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/textGlavni" />
-
+
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="181dp"
+        android:layout_width="170dp"
         android:layout_height="38dp"
-        android:layout_x="134dp"
-        android:layout_y="124dp"
+        android:layout_x="132dp"
+        android:layout_y="152dp"
         android:entries="@array/gradivo" />
 
     <Spinner
         android:id="@+id/Spinner01"
-        android:layout_width="181dp"
+        android:layout_width="170dp"
         android:layout_height="38dp"
-        android:layout_x="134dp"
-        android:layout_y="164dp"
+        android:layout_x="132dp"
+        android:layout_y="192dp"
         android:entries="@array/jeziki" />
 
     <Spinner
         android:id="@+id/Spinner02"
-        android:layout_width="181dp"
+        android:layout_width="170dp"
         android:layout_height="38dp"
-        android:layout_x="134dp"
-        android:layout_y="204dp"
+        android:layout_x="132dp"
+        android:layout_y="232dp"
         android:entries="@array/zalozbe" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="8dp"
-        android:layout_y="164dp"
+        android:layout_x="6dp"
+        android:layout_y="192dp"
         android:text="@string/jezik"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/textGlavni" />
@@ -104,8 +107,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="8dp"
-        android:layout_y="204dp"
+        android:layout_x="6dp"
+        android:layout_y="232dp"
         android:text="@string/zalozba"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/textGlavni" />
@@ -114,10 +117,18 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="6dp"
-        android:layout_y="4dp"
+        android:layout_x="4dp"
+        android:layout_y="32dp"
         android:text="@string/naslov"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/textGlavni" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="143dp"
+        android:layout_y="309dp"
+        android:src="@drawable/bookme" />
 
 </AbsoluteLayout>

@@ -7,7 +7,7 @@
 
     <Spinner
         android:id="@+id/jezi"
-        android:layout_width="176dp"
+        android:layout_width="162dp"
         android:layout_height="38dp"
         android:layout_x="131dp"
         android:layout_y="14dp"
@@ -25,7 +25,7 @@
 
     <Spinner
         android:id="@+id/grad"
-        android:layout_width="176dp"
+        android:layout_width="162dp"
         android:layout_height="38dp"
         android:layout_x="131dp"
         android:layout_y="59dp"
@@ -48,15 +48,16 @@
         android:layout_x="120dp"
         android:layout_y="249dp"
         android:text="@string/isci" />
-
+
     <EditText
         android:id="@+id/beseda"
-        android:layout_width="294dp"
+        android:layout_width="280dp"
         android:layout_height="93dp"
         android:layout_x="11dp"
         android:layout_y="132dp"
         android:inputType="textMultiLine"
-        android:width="200px" android:singleLine="false">
+        android:singleLine="false"
+        android:width="200px" >
 
         <requestFocus />
     </EditText>

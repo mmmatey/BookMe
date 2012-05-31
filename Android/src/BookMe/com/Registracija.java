@@ -1,6 +1,7 @@
 package BookMe.com;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,11 +11,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Registracija extends Activity {
+
 	AutoCompleteTextView user;
 	AutoCompleteTextView pass;
 	TextView error;
-	Button login;
-	Button newUser;
+	Button novuser;
 	RestAsyncTask rat;
 	String response;
 	String ukaz;
@@ -25,13 +26,11 @@ public class Registracija extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.registracija);
-		user=(AutoCompleteTextView)findViewById(R.id.autoCompleteTextView1);
-		pass=(AutoCompleteTextView)findViewById(R.id.AutoCompleteTextView01);
+		novuser=(Button)findViewById(R.id.register);
+		user=(AutoCompleteTextView)findViewById(R.id.usertext);
+		pass=(AutoCompleteTextView)findViewById(R.id.passtext);
 		
-		error=(TextView)findViewById(R.id.textView4);
-		newUser=(Button)findViewById(R.id.button2);
-		
-		newUser.setOnClickListener(new OnClickListener() {
+		novuser.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
@@ -52,7 +51,13 @@ public class Registracija extends Activity {
 					
 					if(b)
 					{
-						setContentView(R.layout.prijava);
+						Intent in = new Intent(getApplicationContext(), Prijava.class);
+						startActivity(in);
+					}
+					else
+						
+					{
+						error.setText("Napaèno geslo ali uporabniško ime.");
 					}
 				}
 				catch(Exception ex)
@@ -61,15 +66,14 @@ public class Registracija extends Activity {
 				}
 			}
 		});
-
 	}
+	private void sendCommand(String com) 
+	{
+			
+			com = com.replace(" ", "%20");
 	
-		private void sendCommand(String com) {
-		
-		com = com.replace(" ", "%20");
-
-		rat = new RestAsyncTask(Values.restURL + com);
-		rat.execute();
-		response=rat.r.response;
+			rat = new RestAsyncTask(Values.restURL + com);
+			rat.execute();
+			response=rat.r.response;
 	}
 }

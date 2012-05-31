@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.Toast;
 
@@ -60,10 +61,11 @@ public class CustomItemizedOverlay extends ItemizedOverlay<OverlayItem> {
 	         GeoPoint p = mapView.getProjection().fromPixels(
 	             (int) event.getX(),
 	             (int) event.getY());
-	             Toast.makeText(this.context, 
-	                 p.getLatitudeE6() / 1E6 + "," + 
-	                 p.getLongitudeE6() /1E6 , 
-	                 Toast.LENGTH_SHORT).show();
+//	             Toast.makeText(this.context, 
+//	                 p.getLatitudeE6() / 1E6 + "," + 
+//	                 p.getLongitudeE6() /1E6 , 
+//	                 Toast.LENGTH_SHORT).show();
+	             Log.d("REST", "X:"+p.getLatitudeE6()+" Y:"+p.getLongitudeE6());
 	     }                            
 	     return false;
 	}

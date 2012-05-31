@@ -57,7 +57,7 @@ private MapView mapView;
         mapView.setBuiltInZoomControls(true);
         mapView.setSatellite(true);
         List<Overlay> mapOverlays = mapView.getOverlays();
-        Drawable drawable = this.getResources().getDrawable(R.drawable.bucika);
+        Drawable drawable = this.getResources().getDrawable(R.drawable.pin);
         CustomItemizedOverlay itemizedOverlay = 
              new CustomItemizedOverlay(drawable, this);
         

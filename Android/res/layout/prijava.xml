@@ -15,16 +15,6 @@
         android:textColor="@color/textGlavni" />
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_x="102dp"
-        android:layout_y="46dp"
-        android:text="@string/prijava"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="50px" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,18 +40,18 @@
         android:layout_height="35dp"
         android:layout_x="120dp"
         android:layout_y="151dp" />
-
+
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="26dp"
         android:layout_height="wrap_content"
-        android:layout_x="104dp"
+        android:layout_x="6dp"
         android:layout_y="302dp"
         android:text=" "
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/login"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_x="22dp"
@@ -75,5 +65,15 @@
         android:layout_x="170dp"
         android:layout_y="218dp"
         android:text="@string/nov" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_x="95dp"
+        android:layout_y="20dp"
+        android:text="@string/prijava"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50px" />
 
 </AbsoluteLayout>

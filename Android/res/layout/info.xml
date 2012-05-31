@@ -115,36 +115,52 @@
 
     </ListView>
 -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_y="245dp"
+    android:background="@color/textGlavni" >
 
 	<TableLayout
 	    android:id="@+id/TableLayout01"
-	    android:layout_width="match_parent"
-	    android:layout_height="282dp"
-	    android:layout_y="245dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_y="290dp"
+	    android:background="@color/text"
 	    android:stretchColumns="*" >
 
-		<TableRow>
+		<TableRow android:background="@color/text">
 		<ListView android:id="@+id/listView1" android:layout_width="fill_parent"
 		        android:layout_height="fill_parent"
 		        android:layout_x="0dp"
-		        android:layout_y="250dp" android:background="@color/textGlavni"
+		        android:layout_y="290dp" android:background="@color/textGlavni"
 		        android:drawSelectorOnTop="true"
 		        android:fastScrollEnabled="true"
 		        android:choiceMode="singleChoice">
-		    <!-- Preview: listitem=@android:layout/simple_expandable_list_item_2 -->
+		    <!-- Preview: listitem=@android:layout/simple_list_item_1 -->
 		</ListView>
 		</TableRow>
 </TableLayout>
+</LinearLayout>
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="76dp"
-        android:layout_y="11dp"
+        android:layout_x="137dp"
+        android:layout_y="14dp"
         android:text="@string/info"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="50px"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="81dp"
+        android:layout_x="-20dp"
+        android:layout_y="0dp"
+        android:src="@drawable/bookmer" />
 
 </AbsoluteLayout>

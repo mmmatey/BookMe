@@ -61,7 +61,7 @@ public class InfoActivity extends Activity {
 		 _vrstaG.setText(gradivo);
 		 _jezik.setText(jezik);
 		 
-		
+		Log.i("REST", id);
 		sendCommand("knjiznicesknjigo/"+id);
 		response=rat.doInBackground(null);
 		try{
@@ -91,7 +91,7 @@ public class InfoActivity extends Activity {
 
 			//lv_arr = (String[]) IskanjeO.rezultat.toArray(new String[0]);
 			lv.setAdapter(new ArrayAdapter<Library>(InfoActivity.this,
-					android.R.layout.simple_list_item_1, knjiznice));
+					R.layout.infolist, knjiznice));
 			
 		}
 		

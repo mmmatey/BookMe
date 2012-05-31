@@ -34,7 +34,7 @@ public class Prijava extends Activity {
 		pass=(AutoCompleteTextView)findViewById(R.id.AutoCompleteTextView01);
 		
 		error=(TextView)findViewById(R.id.textView4);
-		login=(Button)findViewById(R.id.button1);
+		login=(Button)findViewById(R.id.login);
 		newUser=(Button)findViewById(R.id.button2);
 		
 		login.setOnClickListener(new OnClickListener() {
@@ -58,7 +58,13 @@ public class Prijava extends Activity {
 					
 					if(b)
 					{
-						setContentView(R.layout.dodajanje);
+						Intent in = new Intent(getBaseContext(), DodajanjeKnjig.class);
+						startActivity(in);
+					}
+					else
+						
+					{
+						error.setText("Napaèno geslo ali uporabniško ime.");
 					}
 				}
 				catch(Exception ex)
@@ -73,7 +79,8 @@ public class Prijava extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				setContentView(R.layout.registracija);
+				Intent in = new Intent(getApplicationContext(), Registracija.class);
+				startActivity(in);
 			}
 		});
 	}

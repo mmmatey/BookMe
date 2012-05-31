@@ -6,7 +6,7 @@
     android:id="@+id/buttonlayout"
     android:layout_width="fill_parent"
     android:layout_height="47dp"
-    android:background="#87EDFB"
+    android:background="@color/ozadje"
     android:gravity="left|top"
     android:height="32dp"
     android:orientation="horizontal"
@@ -31,9 +31,16 @@
 
 </LinearLayout>
 </LinearLayout>
-<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="*">
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="*" android:background="@color/textGlavni">
 <TableRow>
-<ListView android:id="@+id/ListView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:choiceMode="singleChoice" android:drawSelectorOnTop="true">
+
+<ListView
+    android:id="@android:id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:choiceMode="singleChoice"
+    android:drawSelectorOnTop="true" >
+
     <!-- Preview: listitem=@android:layout/simple_expandable_list_item_2 -->
 </ListView>
 		</TableRow>

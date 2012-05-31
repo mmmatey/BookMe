@@ -21,42 +21,48 @@ public final class R {
         public static final int textGlavni=0x7f040002;
     }
     public static final class drawable {
-        public static final int book_add=0x7f020000;
-        public static final int book_add_no=0x7f020001;
-        public static final int bucika=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int ic_tab_artists_grey=0x7f020004;
-        public static final int ic_tab_artists_white=0x7f020005;
-        public static final int tab_book=0x7f020006;
-        public static final int tab_iskanjei=0x7f020007;
+        public static final int book=0x7f020000;
+        public static final int book_add=0x7f020001;
+        public static final int book_add_no=0x7f020002;
+        public static final int bucika=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int ic_tab_artists_grey=0x7f020005;
+        public static final int ic_tab_artists_white=0x7f020006;
+        public static final int pin=0x7f020007;
+        public static final int tab_book=0x7f020008;
+        public static final int tab_iskanjei=0x7f020009;
     }
     public static final class id {
         public static final int AbsoluteLayout1=0x7f070016;
         public static final int AutoCompleteTextView01=0x7f070021;
-        public static final int Button01=0x7f070027;
+        public static final int Button01=0x7f07002c;
         public static final int EditText01=0x7f07001c;
         public static final int EditText02=0x7f07001b;
-        public static final int ListView01=0x7f070026;
-        public static final int MultiAutoCompleteTextView01=0x7f070003;
-        public static final int MultiAutoCompleteTextView02=0x7f070002;
+        public static final int MultiAutoCompleteTextView01=0x7f070004;
+        public static final int MultiAutoCompleteTextView02=0x7f070003;
         public static final int Spinner01=0x7f070008;
         public static final int Spinner02=0x7f070009;
         public static final int TableLayout01=0x7f070013;
-        public static final int TextView01=0x7f070004;
-        public static final int TextView02=0x7f070001;
+        public static final int TextView01=0x7f070005;
+        public static final int TextView02=0x7f070002;
         public static final int autoCompleteTextView1=0x7f070020;
         public static final int beseda=0x7f07001a;
-        public static final int button1=0x7f070005;
-        public static final int button2=0x7f070022;
-        public static final int buttonlayout=0x7f070023;
-        public static final int buttonlayout2=0x7f070024;
+        public static final int button1=0x7f070000;
+        public static final int button2=0x7f070023;
+        public static final int buttonlayout=0x7f070029;
+        public static final int buttonlayout2=0x7f07002a;
         public static final int editText1=0x7f07001d;
         public static final int grad=0x7f070018;
         public static final int gumbZaIskanje=0x7f070019;
+        public static final int icon=0x7f070027;
         public static final int jezi=0x7f070017;
+        public static final int label=0x7f070028;
         public static final int listView1=0x7f070014;
+        public static final int login=0x7f070022;
         public static final int map_view=0x7f07001f;
-        public static final int multiAutoCompleteTextView1=0x7f070000;
+        public static final int multiAutoCompleteTextView1=0x7f070001;
+        public static final int passtext=0x7f070025;
+        public static final int register=0x7f070026;
         public static final int spinner1=0x7f070007;
         public static final int spinner2=0x7f07001e;
         public static final int textView1=0x7f07000c;
@@ -70,19 +76,22 @@ public final class R {
         public static final int textView7=0x7f07000f;
         public static final int textView8=0x7f070010;
         public static final int textView9=0x7f070011;
-        public static final int txtTest=0x7f070025;
+        public static final int txtTest=0x7f07002b;
+        public static final int usertext=0x7f070024;
     }
     public static final class layout {
         public static final int dodajanje=0x7f030000;
         public static final int info=0x7f030001;
-        public static final int iskanjeo=0x7f030002;
-        public static final int izbirno=0x7f030003;
-        public static final int main=0x7f030004;
-        public static final int maps=0x7f030005;
-        public static final int prijava=0x7f030006;
-        public static final int registracija=0x7f030007;
-        public static final int rezultati=0x7f030008;
-        public static final int ukazno=0x7f030009;
+        public static final int infolist=0x7f030002;
+        public static final int iskanjeo=0x7f030003;
+        public static final int izbirno=0x7f030004;
+        public static final int main=0x7f030005;
+        public static final int maps=0x7f030006;
+        public static final int prijava=0x7f030007;
+        public static final int registracija=0x7f030008;
+        public static final int rezult=0x7f030009;
+        public static final int rezultati=0x7f03000a;
+        public static final int ukazno=0x7f03000b;
     }
     public static final class string {
         public static final int and=0x7f06000c;

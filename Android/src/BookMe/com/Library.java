@@ -18,6 +18,6 @@ public class Library {
      
      public String toString()
  	 {
- 		return naziv+" Na voljo: "+stevilo;
+ 		return naziv+"("+stevilo+")";
  	 }
 }

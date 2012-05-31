@@ -15,16 +15,6 @@
         android:textColor="@color/textGlavni" />
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_x="102dp"
-        android:layout_y="46dp"
-        android:text="@string/regist"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="50px" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +25,7 @@
         android:textColor="@color/textGlavni" />
 
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView1"
+        android:id="@+id/usertext"
         android:layout_width="180dp"
         android:layout_height="35dp"
         android:layout_x="120dp"
@@ -45,7 +35,7 @@
     </AutoCompleteTextView>
 
     <AutoCompleteTextView
-        android:id="@+id/AutoCompleteTextView01"
+        android:id="@+id/passtext"
         android:layout_width="180dp"
         android:layout_height="35dp"
         android:layout_x="120dp"
@@ -65,11 +55,21 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/register"
         android:layout_width="123dp"
         android:layout_height="wrap_content"
         android:layout_x="170dp"
         android:layout_y="218dp"
         android:text="@string/nov" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_x="19dp"
+        android:layout_y="27dp"
+        android:text="@string/regist"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50px" />
 
 </AbsoluteLayout>

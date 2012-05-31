@@ -100,7 +100,7 @@
         android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:layout_x="99dp"
-        android:layout_y="251dp"
+        android:layout_y="240dp"
         android:text="@string/isci" />
 
 </AbsoluteLayout>
