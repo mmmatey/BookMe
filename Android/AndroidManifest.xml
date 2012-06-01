@@ -13,18 +13,21 @@
         <uses-library android:name="com.google.android.maps" />
         <activity
             android:label="@string/app_name"
-            android:name=".BookMeActivity" android:theme="@android:style/Theme.NoTitleBar" >
+            android:name=".BookMeActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="IskanjeO"></activity>
-        <activity android:name="IskanjeI"></activity>
-        <activity android:name="DodajanjeKnjig"></activity>
-        <activity android:name="Rezultat"></activity>
-        <activity android:name="IskanjeU"></activity>
-        <activity android:name="Gmaps"></activity>
+        <activity android:name="IskanjeO" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <activity android:name="IskanjeI" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <activity android:name="DodajanjeKnjig" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <activity android:name="Rezultat" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <activity android:name="IskanjeU" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <activity android:name="Gmaps" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <activity android:name="InfoActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <activity android:name="Prijava"></activity>
+        <activity android:name="Registracija"></activity>
         
     </application>
 

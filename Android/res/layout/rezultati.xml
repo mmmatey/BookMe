@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbars="vertical" android:background="#000000">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/buttonlayout" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="32dp" android:gravity="left|top" android:background="#87EDFB" android:paddingTop="2dp" android:paddingBottom="2dp">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buttonlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="47dp"
+    android:background="@color/ozadje"
+    android:gravity="left|top"
+    android:height="32dp"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp" >
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/buttonlayout2" android:orientation="horizontal" android:layout_height="wrap_content" android:gravity="left|center_vertical" android:layout_gravity="left" android:layout_width="wrap_content">
 
 			<TextView
@@ -16,19 +28,20 @@
 
 </TextView></LinearLayout>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/buttonlayout2" android:orientation="horizontal" android:layout_height="wrap_content" android:gravity="right" android:layout_gravity="right" android:layout_width="fill_parent">
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:text="Button" />
 
 </LinearLayout>
 </LinearLayout>
-<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="*">
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="*" android:background="@color/textGlavni">
 <TableRow>
-<ListView android:id="@+id/ListView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:choiceMode="singleChoice" android:drawSelectorOnTop="true">
-    <!-- Preview: listitem=@android:layout/simple_list_item_1 -->
+
+<ListView
+    android:id="@android:id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:choiceMode="singleChoice"
+    android:drawSelectorOnTop="true" >
+
+    <!-- Preview: listitem=@android:layout/simple_expandable_list_item_2 -->
 </ListView>
 		</TableRow>
 </TableLayout>

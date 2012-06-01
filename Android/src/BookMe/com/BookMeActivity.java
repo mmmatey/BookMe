@@ -18,9 +18,6 @@ import android.widget.Toast;
 public class BookMeActivity extends TabActivity {
     /** Called when the activity is first created. */
 	
-	
-	private RestClient restClient;
-    private String restURL = "http://localhost/BookMe/Service1.svc/json/";
     Reader r = new Reader();
     
     @Override
@@ -28,6 +25,7 @@ public class BookMeActivity extends TabActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        
         Resources res = getResources(); 
         TabHost tabHost = getTabHost();
         TabHost.TabSpec spec;
@@ -38,25 +36,25 @@ public class BookMeActivity extends TabActivity {
 
 
         spec = tabHost.newTabSpec("IskanjeO").setIndicator("Osnovno Iskanje",
-                          res.getDrawable(R.drawable.tab_iskanjei))
+                          res.getDrawable(android.R.drawable.ic_menu_search))
                       .setContent(intent);
         tabHost.addTab(spec);
 
         intent = new Intent().setClass(this, IskanjeI.class);
         spec = tabHost.newTabSpec("iskanjeI").setIndicator("IskanjeI",
-                          res.getDrawable(R.drawable.tab_iskanjei))
-                      .setContent(intent);
-        tabHost.addTab(spec);
-
-        intent = new Intent().setClass(this, DodajanjeKnjig.class);
-        spec = tabHost.newTabSpec("dodaj").setIndicator("Dodajanje",
-                          res.getDrawable(R.drawable.tab_book))
+                          res.getDrawable(android.R.drawable.ic_menu_search))
                       .setContent(intent);
         tabHost.addTab(spec);
         
         intent = new Intent().setClass(this, IskanjeU.class);
         spec = tabHost.newTabSpec("isciu").setIndicator("UkaznoI",
-                          res.getDrawable(R.drawable.tab_iskanjei))
+                          res.getDrawable(android.R.drawable.ic_menu_search))
+                      .setContent(intent);
+        tabHost.addTab(spec);
+        
+        intent = new Intent().setClass(this, Prijava.class);
+        spec = tabHost.newTabSpec("dodaj").setIndicator("Dodajanje",
+                          res.getDrawable(R.drawable.tab_book))
                       .setContent(intent);
         tabHost.addTab(spec);
 
