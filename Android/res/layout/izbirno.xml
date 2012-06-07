@@ -95,12 +95,20 @@
         android:entries="@array/gradivo"
         android:prompt="@array/gradivo" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="125dp"
+        android:layout_y="242dp"
+        android:src="@drawable/bookme" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="115dp"
         android:layout_height="wrap_content"
-        android:layout_x="99dp"
-        android:layout_y="240dp"
+        android:layout_x="98dp"
+        android:layout_y="239dp"
         android:text="@string/isci" />
 
 </AbsoluteLayout>

@@ -48,4 +48,12 @@
         android:layout_y="204dp"
         android:text="@string/isci" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="131dp"
+        android:layout_y="202dp"
+        android:src="@drawable/bookme" />
+
 </AbsoluteLayout>

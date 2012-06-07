@@ -144,17 +144,6 @@
 </TableLayout>
 </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="137dp"
-        android:layout_y="14dp"
-        android:text="@string/info"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="50px"
-        android:textStyle="bold" />
-
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
@@ -162,5 +151,16 @@
         android:layout_x="-20dp"
         android:layout_y="0dp"
         android:src="@drawable/bookmer" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="124dp"
+        android:layout_y="3dp"
+        android:text="@string/info"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50px"
+        android:textStyle="bold" />
 
 </AbsoluteLayout>

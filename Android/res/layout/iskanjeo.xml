@@ -72,4 +72,12 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/textGlavni" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="240dp"
+        android:src="@drawable/bookme" />
+
 </AbsoluteLayout>
